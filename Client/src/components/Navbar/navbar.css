@@ -1,0 +1,93 @@
+.Navbar{
+    width: 100%;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7)10%,transparent);
+    z-index: 1;
+}
+
+.Navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.Navbar-left img{
+    width: 90px;
+}
+
+.Navbar-left ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.Navbar-left ul li{
+     cursor: pointer;
+}
+
+.Navbar-left ul li:hover{
+    color: rgb(132, 118, 118);
+    font-size: 15px;
+}
+
+.Navbar-right{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Navbar-right .icons{
+    width: 20px;
+    cursor: pointer;
+}
+
+.Navbar-right .icons:hover{
+    width: 25px;
+}
+.Navbar-right .profile-icon{
+    border-radius: 4px;
+    width: 35px;
+}
+
+.Profile{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.Navbar .dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: max-content;
+    background-color: #191919;
+    border-radius: 2px;
+    text-decoration: underline;
+    z-index: 1;
+    display: none;
+}
+
+
+.Navbar .dropdown .sign-out {
+    color: #e5e5e5;
+    background-color: transparent; 
+    font-size: 15px;
+    cursor: pointer; 
+    padding: 10px 15px; 
+    border: none; 
+    text-align: left; 
+    width: 100%; 
+    
+}
+
+.Profile:hover .dropdown{
+    display: block;
+}
+
